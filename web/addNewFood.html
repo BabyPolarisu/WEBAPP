@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto; /* Center the box */
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="box">
+        <form action="AddNewFoodServlet">
+            ออเดอร์: <input type="text" name="foodOrder"/><br/>
+            ชื่ออาหาร: <input type="text" name="foodName"><br/>
+            ราคา: <input type="text" name="foodPrice"><br/>
+            <h2>*ใส่ได้แค่เลข*</h2>
+            <input type="submit" value="เพิ่มอาหาร">            
+        </form>
+        </div>
+    </body>
+</html>
